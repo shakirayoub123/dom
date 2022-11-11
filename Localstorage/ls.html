@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    1.//strings
+    // Syntax--localStorage.setItem("key","value")
+    localStorage.setItem("name1", "shakir")
+
+    localStorage.setItem("name2", "shahid")
+
+    localStorage.setItem("name3", "amir")
+
+    //localstorage.getItem("key")
+
+    var name1 = localStorage.getItem("name1")
+    console.log(name1);
+
+    var name2 = localStorage.getItem("name2")
+    console.log(name2)
+
+    2.//Numbers
+    // Syntax--localStorage.setItem("key","value")
+    localStorage.setItem("number1", "1")
+
+    localStorage.setItem("number2", 2)
+
+    localStorage.setItem("number3", 3)
+
+    var num = localStorage.getItem("number1")
+    console.log(num)
+
+    //Arrays---with the help of JSON.stringify(array name ) we will get it into an array
+    var names = ["a", "b", "c"]
+    localStorage.setItem("namesArray", JSON.stringify(names))
+    //by use of JSON stringify we will have name as array otherwise we will have this as string
+
+
+    var namesFromStorage = JSON.parse(localStorage.getItem("namesArray")) //parse will return string inform of array
+
+    // console.log(typeof namesFromStorage)
+
+
+    // important
+    // 1..wheneven you want to store in LS we need to STringify
+    //2.. whenever you want to get array from LS--use parse
+
+
+    3//objects
+
+    var obj = [
+        {
+            name: 'shakir',
+            from: 'kashmir',
+            number: 123 
+        }
+    ]
+    localStorage.setItem("myObj", JSON.stringify(obj))
+
+    var resOBj = JSON.parse(localStorage.getItem("myObj"))
+    console.log(typeof resOBj)
+
+
+</script>
