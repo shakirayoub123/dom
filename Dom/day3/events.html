@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+</head>
+<body>
+    <!-- <button onclick="myFunction()">submit</button> -->
+    <button>click me</button>
+</body>
+</html>
+<script>
+
+//events;- if we want to use events we should use addeventlistner 
+
+// addEventListener("event", functionName)
+document.querySelector('button').addEventListener("click",myFunction)
+
+function myFunction(){
+    console.log("someone clicked me")
+}
+document.querySelector('button').addEventListener("mouseenter", shakir)
+
+function shakir(){
+    document.querySelector('button').style.backgroundColor="blue"
+}
+
+document.querySelector('button').addEventListener("mouseleave", mouseLeave)
+
+function mouseLeave(){
+    document.querySelector('button').style.backgroundColor="teal"
+}
+</script>

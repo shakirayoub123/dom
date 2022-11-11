@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>shakir</h1>
+    <h1>ayoub</h1>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <p>p4</p>
+    <p>p5</p>
+    <p>p6</p>
+
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <div>div4</div>
+</body>
+</html>
+<script>
+    //queryselector will select the first item only so we use queryselectorall and it will display all the with in a array
+// var x=document.querySelector("h1");// will display only ist h1 tag
+var x=document.querySelectorAll("h1"); //will show all the tag in an array
+console.log(x);
+
+var y=document.querySelectorAll("h1+p")
+
+//Combonators in DOM
+// p~div--all div which are siblings of p 
+// h1~p--all p's which are siblings of h1
+
+var a=document.querySelectorAll("#container>p:nth-child(3)")
+console.log(z)
+
+//container>p--all p's which are childs of container
+
+</script>

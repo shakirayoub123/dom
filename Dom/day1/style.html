@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #btn{
+            border:none;
+            height:30px;
+            width:100px;
+            background-color: teal;
+            border-radius: 5px;
+            color:white;
+
+        } */
+    </style>
+</head>
+<body>
+    <h1 id="head">Heading</h1>
+    <button id="btn" onclick="completeFunction()">Mark as Read</button>
+</body>
+<script>
+    // document.getElementById("head").style.backgroundColor="teal"
+    
+    function completeFunction(){
+         document.getElementById("btn").style.backgroundColor="blue"
+         document.getElementById("btn").innerText="Completed"
+         document.getElementById("btn").style.color="white";
+         document.getElementById("btn").style.borderRadius="5px";
+         document.getElementById("btn").style.border="none"
+         
+         
+  }
+</script>
+</html>

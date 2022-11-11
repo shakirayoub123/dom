@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+     <h1 id="likes">0</h1> 
+     <!-- //innertext we have to change by using dom to inc likes --> 
+
+     <button onClick="myFunction()">Like</button> 
+    
+    <button onclick="unlikeFunction()">unLike</button>
+</body>
+<script>
+    var like = 0;
+    function myFunction() {
+
+        // console.log("IMF");
+        like++; //increment
+        document.getElementById("likes").innerText = like //dom used here
+
+    }
+   
+    function unlikeFunction(){
+        like--;
+        document.getElementById("likes").innerText=like
+
+    }
+</script>
+
+</html>

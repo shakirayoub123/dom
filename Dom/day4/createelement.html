@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <h1>create elements using JS</h1> -->
+</head>
+<body>
+    <!-- <h1>i am heading 1</h1> -->
+</body>
+</html>
+<script>
+    //createElement---create tag
+    //create tag--h1,h3,div,p
+    //write innerText
+    //create all the elements by using JS
+   var heading= document.createElement("h1"); //1. create h1 tag first
+   heading.innerText="i Am Heading" //2. giving innertext to that tag
+   //3. add created data to body simply append it to the body
+
+   document.querySelector("body").append(heading) // by use of append data will displayed
+   console.log(heading)
+
+</script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="formtag">
+     <input id="name" type="text" placeholder="Enter name">
+     <input id="age" type="number" placeholder="Enter Age">
+     <select id="gender">
+        <option value="male">Male</option>
+        <option value="Female">Female</option>
+     </select>
+     <input type="submit"/>
+     <!-- dont use button in the forms use input type="submit" -->
+    </form>
+</body>
+
+</html>
+<script>
+
+    //use those steps whe use form
+    // 1.wrap every input inside form tag 
+    // 2. instead of taking  button take input="submit"
+    // 3. add eventlistner to form
+    // 4. event name will be submit instead of click submit is predefined
+    ///5. when ever we use forms it will try send data to server so in this process its getting refresh--default behaviour
+    // 6. we should prevent it
+
+
+     document.querySelector("#formtag").addEventListener("submit",myFun)
+
+     function myFun(){
+        event.preventDefault(); //it will prevent the behaviour
+        // console.log("inside function")
+        var name=document.querySelector("#name").value;
+        var age=document.querySelector("#age").value;
+        var gender=document.querySelector("#gender").value;
+
+        console.log(name, age, gender)
+
+     }
+</script>

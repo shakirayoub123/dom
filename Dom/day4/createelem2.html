@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <h1>create elements using JS</h1> -->
+</head>
+<body>
+</body>
+</html>
+<script>
+for (var i=0; i<65; i++ ){ //for loop
+
+var head=document.createElement("h1"); //created h1 tag 
+head.innerText="heading "; //adding innertext in the tag
+
+var box=document.createElement("div");  
+box.innerText="i am div";
+
+var para=document.createElement("p");  
+para.innerText="i am para";
+
+document.querySelector("body").append(head,box,para) //displaying it
+}
+
+</script>

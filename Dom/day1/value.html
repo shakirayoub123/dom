@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value in DOM</title>
+</head>
+<body>
+   <!-- how to value from input tag -->
+    <!-- displaying the data which we write in option -->
+    <h1>Form</h1>
+    <input id="name" value="" placeholder="Enter name"/>
+    <button  onclick="submitFunction()">Submit</button>
+    <h1 id="display"></h1>
+</body>
+<script>
+
+function submitFunction(){
+    // console.log("submit")
+    var name1=document.getElementById("name").value
+    // console.log(name1)
+    document.getElementById("display").innerText=name1
+}
+</script>
+</html>
