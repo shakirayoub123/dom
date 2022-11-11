@@ -60,6 +60,6 @@ tr.append(td1,td2,td3)
 
 document.querySelector("tbody").append(tr) // appending all the data which is in tr to tbody 
 
- console.log(itemName,itemQty,itemPriorty)
+ console.log(itemName,itemQty,itemPriorty) //printing th data
 
 }
