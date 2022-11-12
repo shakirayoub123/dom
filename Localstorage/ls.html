@@ -16,21 +16,20 @@
 <script>
     1.//strings
     // Syntax--localStorage.setItem("key","value")
+    // this is how we can add data to our LS in form of strings we have added data
     localStorage.setItem("name1", "shakir")
-
     localStorage.setItem("name2", "shahid")
-
     localStorage.setItem("name3", "amir")
 
     //localstorage.getItem("key")
-
     var name1 = localStorage.getItem("name1")
-    console.log(name1);
-
+    // console.log(name1);
     var name2 = localStorage.getItem("name2")
-    console.log(name2)
+    // console.log(name2)
 
-    2.//Numbers
+
+
+    2.//Numbers-------------------
     // Syntax--localStorage.setItem("key","value")
     localStorage.setItem("number1", "1")
 
@@ -70,6 +69,7 @@
 
     var resOBj = JSON.parse(localStorage.getItem("myObj"))
     console.log(typeof resOBj)
+    // localStorage.removeItem("name3") // we can remove keys from here
 
 
 </script>

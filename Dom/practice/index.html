@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<h1>0</h1>
+<button id="inc">Like</button>
+<button id="dec">Un Like</button>
+</html>
+<script>
+
+// 1.//here we have used events and made a inc dec buuton using click event
+// var likes=0;
+// document.querySelector("#inc").addEventListener("click", myFun1);
+
+
+// function myFun1(){
+//     likes++
+//     document.querySelector("h1").innerText=likes;
+// }
+
+// document.querySelector("#dec").addEventListener("click", myFun2)
+
+// function myFun2(){
+//     likes--;
+//     document.querySelector("h1").innerText=likes;
+// }
+
+//2. we will do it by using LS now.
+document.querySelector("h1").innerText=localStorage.getItem("likesNumber");// this we write after refreshing we wont lost the prev data and we have done it 
+var likes=0;
+document.querySelector("#inc").addEventListener("click", myFun1);
+
+
+function myFun1(){
+    likes++;
+    localStorage.setItem("likesNumber",likes); //now the data will be in LOcal storage too if we inc or dec
+    document.querySelector("h1").innerText=likes;
+}
+
+document.querySelector("#dec").addEventListener("click", myFun2)
+
+function myFun2(){
+    localStorage.setItem("likesNumber",likes); ////now the data will be in LOcal storage too if we inc or dec
+    likes--;
+    document.querySelector("h1").innerText=likes;
+}
+
+
+
+
+
+
+
+</script>
